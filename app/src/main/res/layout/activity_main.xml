@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- App bar -->
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_logo_small"
+                android:importantForAccessibility="no"
+                android:padding="6dp"
+                android:src="@drawable/ic_shield"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="@color/text_main"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_ripple_circle"
+                android:contentDescription="@string/settings"
+                android:src="@drawable/ic_sliders" />
+        </LinearLayout>
+
+        <!-- Status tiles + Category / Sort buttons -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/filterFragment"
+            android:name="com.expiryguard.app.FilterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProducts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="104dp" />
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="@string/empty_no_products"
+                android:textColor="@color/text_muted"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="@string/add_product"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/fab_bg"
+        app:icon="@drawable/ic_plus"
+        app:iconTint="@color/primary_dark" />
+</FrameLayout>

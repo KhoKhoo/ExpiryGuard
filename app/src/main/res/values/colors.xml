@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1B7F5C</color>
+    <color name="primary_dark">#0F5A40</color>
+    <color name="primary_light">#CFEBDD</color>
+    <color name="fab_bg">#BFE8D2</color>
+    <color name="background">#FAFBF9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_main">#1B2420</color>
+    <color name="text_muted">#5B6B64</color>
+    <color name="card_border">#DDE5E1</color>
+    <color name="control_border">#C9D5CF</color>
+    <color name="field_border">#8FA39A</color>
+    <color name="outline_green">#9DB8AB</color>
+    <color name="safe_bg">#E1F3E8</color>
+    <color name="safe_text">#0B4F2E</color>
+    <color name="soon_bg">#FFEFCF</color>
+    <color name="soon_text">#6E4200</color>
+    <color name="expired_bg">#FBE1DE</color>
+    <color name="expired_text">#85201A</color>
+    <color name="error">#B3261E</color>
+    <color name="splash_sub">#F2FAF6</color>
+    <color name="scrim">#73141E19</color>
+    <color name="food_bg">#FCE9C8</color>
+    <color name="food_fg">#6E4200</color>
+    <color name="med_bg">#DCE7FB</color>
+    <color name="med_fg">#1F3E7A</color>
+    <color name="cos_bg">#F6DCEA</color>
+    <color name="cos_fg">#7A2352</color>
+    <color name="skin_bg">#DDF1EE</color>
+    <color name="skin_fg">#11615A</color>
+    <color name="other_bg">#E1E8E5</color>
+    <color name="other_fg">#2F4A40</color>
+    <color name="handle">#C9D5CF</color>
+</resources>

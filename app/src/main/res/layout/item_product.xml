@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Category icon: tap opens the photo pop-up. Badge = a photo exists -->
+        <FrameLayout
+            android:id="@+id/btnCategoryIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_tint_food"
+            android:clickable="true"
+            android:clipChildren="false"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_food" />
+
+            <ImageView
+                android:id="@+id/ivPhotoBadge"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:background="@drawable/bg_badge"
+                android:importantForAccessibility="no"
+                android:padding="4dp"
+                android:src="@drawable/ic_image"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- Tap anywhere here to open the options row -->
+        <LinearLayout
+            android:id="@+id/rowMain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_main"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Fresh milk" />
+
+                <TextView
+                    android:id="@+id/tvMeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/text_muted"
+                    android:textSize="13sp"
+                    tools:text="Food · 24 Nov 2026" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_pill_safe"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="14 days" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            style="@style/Widget.EG.Button.Option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/edit"
+            app:icon="@drawable/ic_pencil"
+            app:iconSize="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDetails"
+            style="@style/Widget.EG.Button.Option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/details"
+            app:icon="@drawable/ic_info"
+            app:iconSize="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            style="@style/Widget.EG.Button.Option.Danger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            app:icon="@drawable/ic_trash"
+            app:iconSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

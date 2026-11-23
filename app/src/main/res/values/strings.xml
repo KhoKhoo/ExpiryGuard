@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExpiryGuard</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Home -->
+    <string name="settings">Settings</string>
+    <string name="safe">Safe</string>
+    <string name="expiring_soon">Expiring soon</string>
+    <string name="expired">Expired</string>
+    <string name="category_all_button">Category: All</string>
+    <string name="sort_prefix">Sort: %1$s</string>
+    <string name="sort_soonest_short">Soonest</string>
+    <string name="sort_latest_short">Latest</string>
+    <string name="sort_az_short">A to Z</string>
+    <string name="sort_za_short">Z to A</string>
+    <string name="add_product">Add product</string>
+    <string name="empty_no_products">No products yet. Tap Add product to start.</string>
+    <string name="empty_no_match">No products match this filter.</string>
+    <string name="edit">Edit</string>
+    <string name="details">Details</string>
+    <string name="delete">Delete</string>
+    <string name="view_photo_of">View photo of %1$s</string>
+
+    <!-- Sheets -->
+    <string name="sort_by">Sort by</string>
+    <string name="sort_soonest">Soonest to expire</string>
+    <string name="sort_latest">Latest to expire</string>
+    <string name="sort_az">Name A to Z</string>
+    <string name="sort_za">Name Z to A</string>
+    <string name="category">Category</string>
+    <string name="all_categories">All categories</string>
+    <string name="cat_food">Food &amp; beverages</string>
+    <string name="cat_cosmetics">Cosmetics</string>
+    <string name="cat_medication">Medications</string>
+    <string name="cat_skincare">Skin care</string>
+    <string name="cat_other">Other</string>
+
+    <!-- Add / Edit -->
+    <string name="title_add">Add product</string>
+    <string name="title_edit">Edit product</string>
+    <string name="back">Back</string>
+    <string name="no_photo_yet">No photo yet</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="product_name">Product name</string>
+    <string name="product_name_hint">e.g. Orange juice</string>
+    <string name="expiration_date">Expiration date</string>
+    <string name="choose_date_hint">Choose a date</string>
+    <string name="date_helper">Today or a later date</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="err_name">Enter a product name.</string>
+    <string name="err_date_empty">Choose an expiration date.</string>
+    <string name="err_date_past">This date has passed. Choose today or a later date.</string>
+    <string name="msg_saved">Product saved</string>
+    <string name="msg_changes_saved">Changes saved</string>
+    <string name="msg_no_camera">No camera app found</string>
+    <string name="msg_no_gallery">No gallery app found</string>
+    <string name="msg_photo_failed">Could not load the photo</string>
+
+    <!-- Details -->
+    <string name="product_details">Product details</string>
+    <string name="label_category">Category</string>
+    <string name="label_expiration_date">Expiration date</string>
+    <string name="label_photo">Photo</string>
+    <string name="photo_attached">Attached</string>
+    <string name="photo_none">None</string>
+    <string name="msg_deleted">Product deleted</string>
+
+    <!-- Dialogs -->
+    <string name="delete_title">Delete product?</string>
+    <string name="delete_message">%1$s will be removed from the list.</string>
+    <string name="close">Close</string>
+    <string name="no_photo_message">No photo added for this product yet. Tap Edit to add one.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="notif_title">Expiry notifications</string>
+    <string name="notif_desc">Get a reminder before products expire</string>
+    <string name="notifications_on">Notifications on</string>
+    <string name="notifications_off">Notifications off</string>
+    <string name="warn_title">Warn me before</string>
+    <string name="warn_desc">Also sets what counts as Expiring soon</string>
+    <string name="days_label">days</string>
+    <string name="fewer_days">Fewer days</string>
+    <string name="more_days">More days</string>
+    <string name="time_title">Daily check time</string>
+    <string name="time_desc">When the app looks for products to warn about</string>
+    <string name="send_test">Send a test notification</string>
+    <string name="msg_check_set">Daily check set for %1$s</string>
+    <string name="msg_permission_denied">Notification permission was denied</string>
+
+    <!-- Notification -->
+    <string name="channel_name">Expiry reminders</string>
+    <string name="channel_desc">Daily reminder about products that need attention</string>
+    <string name="notif_one">1 product needs attention</string>
+    <string name="notif_many">%1$d products need attention</string>
+    <string name="notif_more">+ %1$d more</string>
+</resources>
